@@ -3,22 +3,35 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
+    android:background="#292929"
     android:orientation="vertical">
 
     <ir.mirrajabi.persiancalendar.PersianCalendarView
         android:id="@+id/persian_calendar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:pcv_colorBackground="#4bb2b8"
-        app:pcv_colorDayNameText="#ffffff"
-        app:pcv_colorHoliday="#fd011a"
-        app:pcv_colorHolidayText="#d0635d"
-        app:pcv_colorPrimaryText="#5e5e5e"/>
+        android:layout_height="290sp"
+        app:pcv_colorBackground="#292929"
+        app:pcv_colorDayName="#bab6b6"
+        app:pcv_colorHoliday="#ffd506"
+        app:pcv_colorHolidaySelected="#f1f2f3"
+        app:pcv_colorNormalDaySelected="#d9d9d9"
+        app:pcv_colorNormalDay="#f3f4f5"
+        app:pcv_eventUnderlineColor="#02f0f0"/>
 
     <TextView
-        android:id="@+id/txt_date"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:id="@+id/txt_day_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#f0f2f3"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/txt_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#c6d9e2"
+        android:textSize="20sp"/>
 
 </LinearLayout>

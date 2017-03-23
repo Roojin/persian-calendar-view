@@ -4,8 +4,12 @@
         <attr name="pcv_typefacePath" format="string"></attr>
         <attr name="pcv_colorBackground" format="color"></attr>
         <attr name="pcv_colorHoliday" format="color"></attr>
-        <attr name="pcv_colorHolidayText" format="color"></attr>
-        <attr name="pcv_colorPrimaryText" format="color"></attr>
-        <attr name="pcv_colorDayNameText" format="color"></attr>
+        <attr name="pcv_colorHolidaySelected" format="color"></attr>
+        <attr name="pcv_colorNormalDaySelected" format="color"></attr>
+        <attr name="pcv_colorNormalDay" format="color"></attr>
+        <attr name="pcv_colorDayName" format="color"></attr>
+        <attr name="pcv_eventUnderlineColor" format="color"></attr>
+        <attr name="pcv_todayBackground" format="reference"></attr>
+        <attr name="pcv_selectedDayBackground" format="reference"></attr>
     </declare-styleable>
 </resources>

@@ -52,21 +52,30 @@ public class PersianCalendarView extends FrameLayout {
             if (typeface != null)
                 mCalendarHandler.setTypeface(typeface);
         }
+        mCalendarHandler.setTodayBackground(typedArray.getResourceId(
+                R.styleable.PersianCalendarView_pcv_todayBackground,
+                mCalendarHandler.getTodayBackground()));
+        mCalendarHandler.setSelectedDayBackground(typedArray.getResourceId(
+                R.styleable.PersianCalendarView_pcv_selectedDayBackground,
+                mCalendarHandler.getSelectedDayBackground()));
         mCalendarHandler.setColorDayName(typedArray.getColor(
-                R.styleable.PersianCalendarView_pcv_colorDayNameText,
+                R.styleable.PersianCalendarView_pcv_colorDayName,
                 mCalendarHandler.getColorDayName()));
         mCalendarHandler.setColorBackground(typedArray.getColor(
                 R.styleable.PersianCalendarView_pcv_colorBackground,
                 mCalendarHandler.getColorHolidaySelected()));
         mCalendarHandler.setColorHolidaySelected(typedArray.getColor(
-                R.styleable.PersianCalendarView_pcv_colorHolidayText,
+                R.styleable.PersianCalendarView_pcv_colorHolidaySelected,
                 mCalendarHandler.getColorHolidaySelected()));
         mCalendarHandler.setColorHoliday(typedArray.getColor(
                 R.styleable.PersianCalendarView_pcv_colorHoliday,
                 mCalendarHandler.getColorHoliday()));
         mCalendarHandler.setColorNormalDaySelected(typedArray.getColor(
-                R.styleable.PersianCalendarView_pcv_colorPrimaryText,
+                R.styleable.PersianCalendarView_pcv_colorNormalDaySelected,
                 mCalendarHandler.getColorNormalDaySelected()));
+        mCalendarHandler.setColorEventUnderline(typedArray.getColor(
+                R.styleable.PersianCalendarView_pcv_eventUnderlineColor,
+                mCalendarHandler.getColorEventUnderline()));
         try {
             mCalendarFragment = CalendarFragment.class.newInstance();
         } catch (InstantiationException e) {

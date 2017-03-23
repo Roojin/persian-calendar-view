@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Build;
+import android.support.annotation.DrawableRes;
 import android.support.annotation.RawRes;
 import android.text.TextUtils;
 import android.util.Log;
@@ -48,6 +49,12 @@ public class PersianCalendarHandler {
     private int mColorNormalDay = Color.WHITE;
     private int mColorNormalDaySelected = Color.BLUE;
     private int mColorDayName = Color.LTGRAY;
+    private int mColorEventUnderline = Color.RED;
+
+    @DrawableRes
+    private int mSelectedDayBackground = R.drawable.circle_select;
+    @DrawableRes
+    private int mTodayBackground = R.drawable.circle_current_day;
 
     private int mDaysFontSize = 25;
     private int mHeadersFontSize = 20;
@@ -395,6 +402,15 @@ public class PersianCalendarHandler {
         return this;
     }
 
+    public int getColorEventUnderline() {
+        return mColorEventUnderline;
+    }
+
+    public PersianCalendarHandler setColorEventUnderline(int colorEventUnderline) {
+        mColorEventUnderline = colorEventUnderline;
+        return this;
+    }
+
     public int getDaysFontSize() {
         return mDaysFontSize;
     }
@@ -458,5 +474,23 @@ public class PersianCalendarHandler {
 
     public OnMonthChangedListener getOnMonthChangedListener() {
         return mOnMonthChangedListener;
+    }
+
+    public int getTodayBackground() {
+        return mTodayBackground;
+    }
+
+    public PersianCalendarHandler setTodayBackground(int todayBackground) {
+        mTodayBackground = todayBackground;
+        return this;
+    }
+
+    public int getSelectedDayBackground() {
+        return mSelectedDayBackground;
+    }
+
+    public PersianCalendarHandler setSelectedDayBackground(int selectedDayBackground) {
+        mSelectedDayBackground = selectedDayBackground;
+        return this;
     }
 }

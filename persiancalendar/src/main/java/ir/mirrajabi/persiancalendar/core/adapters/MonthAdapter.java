@@ -50,7 +50,7 @@ public class MonthAdapter extends RecyclerView.Adapter<MonthAdapter.ViewHolder> 
         TextView mNum;
         View mToday;
         View mSelectDay;
-        View mView;
+        View mEvent;
 
         public ViewHolder(View itemView) {
             super(itemView);
@@ -58,7 +58,7 @@ public class MonthAdapter extends RecyclerView.Adapter<MonthAdapter.ViewHolder> 
             mNum = (TextView) itemView.findViewById(R.id.num);
             mToday = itemView.findViewById(R.id.today);
             mSelectDay = itemView.findViewById(R.id.select_day);
-            mView = itemView.findViewById(R.id.event);
+            mEvent = itemView.findViewById(R.id.event);
 
             itemView.setOnClickListener(this);
             itemView.setOnLongClickListener(this);
@@ -114,6 +114,9 @@ public class MonthAdapter extends RecyclerView.Adapter<MonthAdapter.ViewHolder> 
 
     @Override
     public void onBindViewHolder(MonthAdapter.ViewHolder holder, int position) {
+        holder.mToday.setBackgroundResource(mCalendarHandler.getTodayBackground());
+        holder.mSelectDay.setBackgroundResource(mCalendarHandler.getSelectedDayBackground());
+        holder.mEvent.setBackgroundColor(mCalendarHandler.getColorEventUnderline());
         position += 6 - (position % 7) * 2;
         if (mTotalDays < position - 6 - mFirstDayOfWeek) {
             return;
@@ -132,9 +135,9 @@ public class MonthAdapter extends RecyclerView.Adapter<MonthAdapter.ViewHolder> 
                 }
 
                 if (mDays.get(position - 7 - mFirstDayOfWeek).isEvent()) {
-                    holder.mView.setVisibility(View.VISIBLE);
+                    holder.mEvent.setVisibility(View.VISIBLE);
                 } else {
-                    holder.mView.setVisibility(View.GONE);
+                    holder.mEvent.setVisibility(View.GONE);
                 }
 
                 if (mDays.get(position - 7 - mFirstDayOfWeek).isToday()) {
@@ -159,7 +162,7 @@ public class MonthAdapter extends RecyclerView.Adapter<MonthAdapter.ViewHolder> 
                 holder.mToday.setVisibility(View.GONE);
                 holder.mSelectDay.setVisibility(View.GONE);
                 holder.mNum.setVisibility(View.GONE);
-                holder.mView.setVisibility(View.GONE);
+                holder.mEvent.setVisibility(View.GONE);
             }
             mCalendarHandler.setFontAndShape(holder.mNum);
         } else {
@@ -168,7 +171,7 @@ public class MonthAdapter extends RecyclerView.Adapter<MonthAdapter.ViewHolder> 
             holder.mNum.setTextSize(mCalendarHandler.getHeadersFontSize());
             holder.mToday.setVisibility(View.GONE);
             holder.mSelectDay.setVisibility(View.GONE);
-            holder.mView.setVisibility(View.GONE);
+            holder.mEvent.setVisibility(View.GONE);
             holder.mNum.setVisibility(View.VISIBLE);
             mCalendarHandler.setFont(holder.mNum);
         }
