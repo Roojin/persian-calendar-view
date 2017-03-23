@@ -35,6 +35,7 @@ now just simply add PersianCalendarView to your layouts
     app:pcv_colorNormalDay="#f3f4f5"
     app:pcv_eventUnderlineColor="#02f0f0"/>
 ```
+[Sample App](https://github.com/mirrajabi/persian-calendar-view/tree/master/app) is provided to demonstrate the basic scenario.
 
 ## Styling
 #### Attributes
