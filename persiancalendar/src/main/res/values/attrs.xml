@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PersianCalendarView">
+        <attr name="pcv_typefacePath" format="string"></attr>
+        <attr name="pcv_colorBackground" format="color"></attr>
+        <attr name="pcv_colorHoliday" format="color"></attr>
+        <attr name="pcv_colorHolidayText" format="color"></attr>
+        <attr name="pcv_colorPrimaryText" format="color"></attr>
+        <attr name="pcv_colorDayNameText" format="color"></attr>
+    </declare-styleable>
+</resources>

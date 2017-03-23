@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="grid_calendar_height">290sp</dimen>
+    <dimen name="grid_calendar_padding">20sp</dimen>
+    <dimen name="grid_calendar_padding_bottom">4sp</dimen>
+
+    <dimen name="day_item_size">40sp</dimen>
+    <dimen name="day_item_select_size">38sp</dimen>
+    <dimen name="day_item_event_size">2sp</dimen>
+
+</resources>
