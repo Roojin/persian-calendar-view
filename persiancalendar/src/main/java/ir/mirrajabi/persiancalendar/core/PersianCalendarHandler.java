@@ -9,7 +9,6 @@ import android.support.annotation.RawRes;
 import android.text.TextUtils;
 import android.util.Log;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -56,8 +55,8 @@ public class PersianCalendarHandler {
     @DrawableRes
     private int mTodayBackground = R.drawable.circle_current_day;
 
-    private int mDaysFontSize = 25;
-    private int mHeadersFontSize = 20;
+    private float mDaysFontSize = 25;
+    private float mHeadersFontSize = 20;
 
     private List<CalendarEvent> mOfficialEvents;
     private List<CalendarEvent> mLocalEvents;
@@ -195,17 +194,13 @@ public class PersianCalendarHandler {
         return mWeekDaysNames[date.getDayOfWeek() % 7];
     }
 
-    public void quickToast(String message) {
-        Toast.makeText(mContext, shape(message), Toast.LENGTH_SHORT).show();
-    }
-
     private String readStream(InputStream is) {
         // http://stackoverflow.com/a/5445161
         Scanner s = new Scanner(is).useDelimiter("\\A");
         return s.hasNext() ? s.next() : "";
     }
 
-    public String readRawResource(@RawRes int res) {
+    private String readRawResource(@RawRes int res) {
         return readStream(mContext.getResources().openRawResource(res));
     }
 
@@ -411,20 +406,20 @@ public class PersianCalendarHandler {
         return this;
     }
 
-    public int getDaysFontSize() {
+    public float getDaysFontSize() {
         return mDaysFontSize;
     }
 
-    public PersianCalendarHandler setDaysFontSize(int daysFontSize) {
+    public PersianCalendarHandler setDaysFontSize(float daysFontSize) {
         mDaysFontSize = daysFontSize;
         return this;
     }
 
-    public int getHeadersFontSize() {
+    public float getHeadersFontSize() {
         return mHeadersFontSize;
     }
 
-    public PersianCalendarHandler setHeadersFontSize(int headersFontSize) {
+    public PersianCalendarHandler setHeadersFontSize(float headersFontSize) {
         mHeadersFontSize = headersFontSize;
         return this;
     }
@@ -488,7 +483,6 @@ public class PersianCalendarHandler {
     public int getSelectedDayBackground() {
         return mSelectedDayBackground;
     }
-
     public PersianCalendarHandler setSelectedDayBackground(int selectedDayBackground) {
         mSelectedDayBackground = selectedDayBackground;
         return this;

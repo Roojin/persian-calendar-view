@@ -52,6 +52,12 @@ public class PersianCalendarView extends FrameLayout {
             if (typeface != null)
                 mCalendarHandler.setTypeface(typeface);
         }
+        mCalendarHandler.setDaysFontSize(typedArray.getDimension(
+                R.styleable.PersianCalendarView_pcv_fontSize,
+                25));
+        mCalendarHandler.setHeadersFontSize(typedArray.getDimension(
+                R.styleable.PersianCalendarView_pcv_HeadersFontSize,
+                20));
         mCalendarHandler.setTodayBackground(typedArray.getResourceId(
                 R.styleable.PersianCalendarView_pcv_todayBackground,
                 mCalendarHandler.getTodayBackground()));
@@ -73,6 +79,9 @@ public class PersianCalendarView extends FrameLayout {
         mCalendarHandler.setColorNormalDaySelected(typedArray.getColor(
                 R.styleable.PersianCalendarView_pcv_colorNormalDaySelected,
                 mCalendarHandler.getColorNormalDaySelected()));
+        mCalendarHandler.setColorNormalDay(typedArray.getColor(
+                R.styleable.PersianCalendarView_pcv_colorNormalDay,
+                mCalendarHandler.getColorNormalDay()));
         mCalendarHandler.setColorEventUnderline(typedArray.getColor(
                 R.styleable.PersianCalendarView_pcv_eventUnderlineColor,
                 mCalendarHandler.getColorEventUnderline()));
@@ -112,7 +121,7 @@ public class PersianCalendarView extends FrameLayout {
         goToMonthFromNow(-1);
     }
 
-    private void goToMonthFromNow(int offset){
+    public void goToMonthFromNow(int offset){
         mCalendarFragment.changeMonth(offset);
     }
 

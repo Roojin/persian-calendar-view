@@ -11,5 +11,7 @@
         <attr name="pcv_eventUnderlineColor" format="color"></attr>
         <attr name="pcv_todayBackground" format="reference"></attr>
         <attr name="pcv_selectedDayBackground" format="reference"></attr>
+        <attr name="pcv_fontSize" format="dimension"></attr>
+        <attr name="pcv_HeadersFontSize" format="dimension"></attr>
     </declare-styleable>
 </resources>
