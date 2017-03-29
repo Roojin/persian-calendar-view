@@ -12,12 +12,7 @@ machine:
 dependencies:
     pre:
         - echo y | android update sdk --no-ui --all --filter tools,platform-tools,extra-google-m2repository,extra-google-google_play_services,extra-android-support,extra-android-m2repository,android-25
-        - echo y | android update sdk --no-ui --all --filter build-tools-24.0.1
+        - echo y | android update sdk --no-ui --all --filter build-tools-25.0.2
     cache_directories:
         - /usr/local/android-sdk-linux/tools
         - /usr/local/android-sdk-linux/build-tools/25.0.2
-
-test:
-    override:
-        - ./gradlew assemble
-        - cp -r app/build/outputs $CIRCLE_ARTIFACTS
