@@ -1,5 +1,6 @@
 # PersianCalendarView - تقویم فارسی اندروید
 [![](https://jitpack.io/v/mirrajabi/persian-calendar-view.svg)](https://jitpack.io/#mirrajabi/persian-calendar-view)
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Persian%20Calendar%20View-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/5460)
 
 Persian calendar view for android based on [ebraminio](https://github.com/ebraminio)'s [DroidPersianCalendar](https://github.com/ebraminio/DroidPersianCalendar) open-source project.
 
