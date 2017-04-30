@@ -47,7 +47,8 @@ You can also interact with the sample app in [this Page](https://appetize.io/emb
 #### Attributes
 | Attribute                  | Type      | Description                                        |
 | -------------------------- |:---------:| :------------------------------------------------- |
-| pcv_typefacePath           | string    | Path to your custom font in assets folder          |
+| pcv_typefacePath           | string    | Path to custom font in assets folder               |
+| pcv_headersTypefacePath    | string    | Path to custom font for header in assets folder    |
 | pcv_colorBackground        | color     | Calendar's background color                        |
 | pcv_colorHoliday           | color     | Text color of holidays                             |
 | pcv_colorHolidaySelected   | color     | Text color of holidays when selected               |
