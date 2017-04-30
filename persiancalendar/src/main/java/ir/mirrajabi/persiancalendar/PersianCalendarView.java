@@ -52,11 +52,17 @@ public class PersianCalendarView extends FrameLayout {
             if (typeface != null)
                 mCalendarHandler.setTypeface(typeface);
         }
+        if(typedArray.hasValue(R.styleable.PersianCalendarView_pcv_headersTypefacePath)) {
+            Typeface typeface = Typeface.createFromAsset(context.getAssets(),
+                    typedArray.getString(R.styleable.PersianCalendarView_pcv_headersTypefacePath));
+            if (typeface != null)
+                mCalendarHandler.setHeadersTypeface(typeface);
+        }
         mCalendarHandler.setDaysFontSize(typedArray.getDimension(
                 R.styleable.PersianCalendarView_pcv_fontSize,
                 25));
         mCalendarHandler.setHeadersFontSize(typedArray.getDimension(
-                R.styleable.PersianCalendarView_pcv_HeadersFontSize,
+                R.styleable.PersianCalendarView_pcv_headersFontSize,
                 20));
         mCalendarHandler.setTodayBackground(typedArray.getResourceId(
                 R.styleable.PersianCalendarView_pcv_todayBackground,

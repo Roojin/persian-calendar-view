@@ -2,6 +2,7 @@
 <resources>
     <declare-styleable name="PersianCalendarView">
         <attr name="pcv_typefacePath" format="string"></attr>
+        <attr name="pcv_headersTypefacePath" format="string"></attr>
         <attr name="pcv_colorBackground" format="color"></attr>
         <attr name="pcv_colorHoliday" format="color"></attr>
         <attr name="pcv_colorHolidaySelected" format="color"></attr>
@@ -12,6 +13,6 @@
         <attr name="pcv_todayBackground" format="reference"></attr>
         <attr name="pcv_selectedDayBackground" format="reference"></attr>
         <attr name="pcv_fontSize" format="dimension"></attr>
-        <attr name="pcv_HeadersFontSize" format="dimension"></attr>
+        <attr name="pcv_headersFontSize" format="dimension"></attr>
     </declare-styleable>
 </resources>

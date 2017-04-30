@@ -41,6 +41,7 @@ public class PersianCalendarHandler {
     private final String TAG = PersianCalendarHandler.class.getName();
     private Context mContext;
     private Typeface mTypeface;
+    private Typeface mHeadersTypeface;
 
     private int mColorBackground = Color.BLACK;
     private int mColorHoliday = Color.RED;
@@ -120,6 +121,9 @@ public class PersianCalendarHandler {
     private void initTypeface() {
         if (mTypeface == null) {
             mTypeface = Typeface.createFromAsset(mContext.getAssets(), Constants.FONT_PATH);
+        }
+        if (mHeadersTypeface == null) {
+            mHeadersTypeface = Typeface.createFromAsset(mContext.getAssets(), Constants.FONT_PATH);
         }
     }
 
@@ -485,6 +489,15 @@ public class PersianCalendarHandler {
     }
     public PersianCalendarHandler setSelectedDayBackground(int selectedDayBackground) {
         mSelectedDayBackground = selectedDayBackground;
+        return this;
+    }
+
+    public Typeface getHeadersTypeface() {
+        return mHeadersTypeface;
+    }
+
+    public PersianCalendarHandler setHeadersTypeface(Typeface headersTypeface) {
+        mHeadersTypeface = headersTypeface;
         return this;
     }
 }

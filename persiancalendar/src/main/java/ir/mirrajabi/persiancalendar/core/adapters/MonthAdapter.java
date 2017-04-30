@@ -169,6 +169,7 @@ public class MonthAdapter extends RecyclerView.Adapter<MonthAdapter.ViewHolder> 
             holder.mNum.setText(Constants.FIRST_CHAR_OF_DAYS_OF_WEEK_NAME[position]);
             holder.mNum.setTextColor(mCalendarHandler.getColorDayName());
             holder.mNum.setTextSize(mCalendarHandler.getHeadersFontSize());
+            holder.mNum.setTypeface(mCalendarHandler.getHeadersTypeface());
             holder.mToday.setVisibility(View.GONE);
             holder.mSelectDay.setVisibility(View.GONE);
             holder.mEvent.setVisibility(View.GONE);
