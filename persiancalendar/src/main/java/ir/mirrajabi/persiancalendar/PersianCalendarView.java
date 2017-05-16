@@ -58,10 +58,10 @@ public class PersianCalendarView extends FrameLayout {
             if (typeface != null)
                 mCalendarHandler.setHeadersTypeface(typeface);
         }
-        mCalendarHandler.setDaysFontSize(typedArray.getDimension(
+        mCalendarHandler.setDaysFontSize(typedArray.getDimensionPixelSize(
                 R.styleable.PersianCalendarView_pcv_fontSize,
                 25));
-        mCalendarHandler.setHeadersFontSize(typedArray.getDimension(
+        mCalendarHandler.setHeadersFontSize(typedArray.getDimensionPixelSize(
                 R.styleable.PersianCalendarView_pcv_headersFontSize,
                 20));
         mCalendarHandler.setTodayBackground(typedArray.getResourceId(

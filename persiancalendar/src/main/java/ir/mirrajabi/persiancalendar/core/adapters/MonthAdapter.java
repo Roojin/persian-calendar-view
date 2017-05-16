@@ -3,6 +3,7 @@ package ir.mirrajabi.persiancalendar.core.adapters;
 import android.content.Context;
 import android.os.Build;
 import android.support.v7.widget.RecyclerView;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -126,7 +127,7 @@ public class MonthAdapter extends RecyclerView.Adapter<MonthAdapter.ViewHolder> 
                 holder.mNum.setText(mDays.get(position - 7 - mDays.get(0).getDayOfWeek()).getNum());
                 holder.mNum.setVisibility(View.VISIBLE);
 
-                holder.mNum.setTextSize(mCalendarHandler.getDaysFontSize());
+                holder.mNum.setTextSize(TypedValue.COMPLEX_UNIT_PX, mCalendarHandler.getDaysFontSize());
 
                 if (mDays.get(position - 7 - mFirstDayOfWeek).isHoliday()) {
                     holder.mNum.setTextColor(mCalendarHandler.getColorHoliday());
@@ -168,7 +169,7 @@ public class MonthAdapter extends RecyclerView.Adapter<MonthAdapter.ViewHolder> 
         } else {
             holder.mNum.setText(Constants.FIRST_CHAR_OF_DAYS_OF_WEEK_NAME[position]);
             holder.mNum.setTextColor(mCalendarHandler.getColorDayName());
-            holder.mNum.setTextSize(mCalendarHandler.getHeadersFontSize());
+            holder.mNum.setTextSize(TypedValue.COMPLEX_UNIT_PX, mCalendarHandler.getHeadersFontSize());
             holder.mNum.setTypeface(mCalendarHandler.getHeadersTypeface());
             holder.mToday.setVisibility(View.GONE);
             holder.mSelectDay.setVisibility(View.GONE);
