@@ -37,7 +37,6 @@ public class MonthFragment extends Fragment {
 
         mPersianCalendarHandler = PersianCalendarHandler.getInstance(getContext());
         View view = inflater.inflate(R.layout.fragment_month, container, false);
-        view.setBackgroundColor(mPersianCalendarHandler.getColorBackground());
         mOffset = getArguments().getInt(Constants.OFFSET_ARGUMENT);
         List<Day> days = mPersianCalendarHandler.getDays(mOffset);
 

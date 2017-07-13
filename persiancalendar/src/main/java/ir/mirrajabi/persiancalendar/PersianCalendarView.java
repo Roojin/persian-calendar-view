@@ -98,6 +98,7 @@ public class PersianCalendarView extends FrameLayout {
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         }
+        setBackgroundColor(mCalendarHandler.getColorBackground());
         FragmentManager m = ((AppCompatActivity)getContext()).getSupportFragmentManager();
         m.beginTransaction()
                 .replace(R.id.fragment_holder,
@@ -110,6 +111,7 @@ public class PersianCalendarView extends FrameLayout {
 
     public void update(){
         this.invalidate();
+        setBackgroundColor(mCalendarHandler.getColorBackground());
     }
 
     public void goToDate(PersianDate date){

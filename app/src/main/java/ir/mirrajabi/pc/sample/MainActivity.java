@@ -49,5 +49,8 @@ public class MainActivity extends AppCompatActivity {
                 + calendar.getMonthName(today);
         txtDayMonth.setText(dayAndMonth);
         txtYear.setText(calendar.formatNumber(today.getYear()));
+
+        calendar.setColorBackground(getResources().getColor(android.R.color.holo_blue_dark));
+        persianCalendarView.update();
     }
 }
