@@ -20,12 +20,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         final PersianCalendarView persianCalendarView  = (PersianCalendarView)findViewById(R.id.persian_calendar);
         final PersianCalendarHandler calendar = persianCalendarView.getCalendar();
-                PersianDate today = calendar.getToday();
+        PersianDate today = calendar.getToday();
         calendar.addLocalEvent(new CalendarEvent(
-                calendar.getToday(), "Custom event", false
+                today, "Custom event", false
         ));
         calendar.addLocalEvent(new CalendarEvent(
-                today.clone().rollDay(12,true), "Custom event 2", true
+                today.clone().rollDay(2,true), "Custom event 2", true
         ));
         calendar.setOnMonthChangedListener(new OnMonthChangedListener() {
             @Override
@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        calendar.setHighlightOfficialEvents(false);
         TextView txtDayMonth = (TextView) findViewById(R.id.txt_day_month);
         TextView txtYear = (TextView) findViewById(R.id.txt_year);
 

@@ -135,8 +135,13 @@ public class MonthAdapter extends RecyclerView.Adapter<MonthAdapter.ViewHolder> 
                     holder.mNum.setTextColor(mCalendarHandler.getColorNormalDay());
                 }
 
-                if (mDays.get(position - 7 - mFirstDayOfWeek).isEvent()) {
-                    holder.mEvent.setVisibility(View.VISIBLE);
+                Day day = mDays.get(position - 7 - mFirstDayOfWeek);
+                if (day.isEvent()) {
+                    if(day.isLocalEvent() && mCalendarHandler.isHighlightingLocalEvents())
+                        holder.mEvent.setVisibility(View.VISIBLE);
+                    else if(!day.isLocalEvent() && mCalendarHandler.isHighlightingOfficialEvents())
+                        holder.mEvent.setVisibility(View.VISIBLE);
+                    else holder.mEvent.setVisibility(View.GONE);
                 } else {
                     holder.mEvent.setVisibility(View.GONE);
                 }

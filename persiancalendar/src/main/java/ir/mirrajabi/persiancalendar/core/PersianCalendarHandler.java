@@ -59,6 +59,9 @@ public class PersianCalendarHandler {
     private float mDaysFontSize = 25;
     private float mHeadersFontSize = 20;
 
+    private boolean mHighlightLocalEvents = true;
+    private boolean mHighlightOfficialEvents = true;
+
     private List<CalendarEvent> mOfficialEvents;
     private List<CalendarEvent> mLocalEvents;
 
@@ -179,6 +182,24 @@ public class PersianCalendarHandler {
 
     public String dayTitleSummary(PersianDate persianDate) {
         return getWeekDayName(persianDate) + Constants.PERSIAN_COMMA + " " + dateToString(persianDate);
+    }
+
+    public boolean isHighlightingLocalEvents() {
+        return mHighlightLocalEvents;
+    }
+
+    public PersianCalendarHandler setHighlightLocalEvents(boolean highlightLocalEvents) {
+        mHighlightLocalEvents = highlightLocalEvents;
+        return this;
+    }
+
+    public boolean isHighlightingOfficialEvents() {
+        return mHighlightOfficialEvents;
+    }
+
+    public PersianCalendarHandler setHighlightOfficialEvents(boolean highlightOfficialEvents) {
+        mHighlightOfficialEvents = highlightOfficialEvents;
+        return this;
     }
 
     public String[] monthsNamesOfCalendar(AbstractDate date) {
@@ -307,9 +328,12 @@ public class PersianCalendarHandler {
                     day.setHoliday(true);
                 }
 
-                if (getAllEventsForDay(persianDate).size() > 0) {
-                    day.setEvent(true);
-                }
+                if (mHighlightLocalEvents)
+                    if (getLocalEventsForDay(persianDate).size() > 0)
+                        day.setEvent(true, true);
+                if (mHighlightOfficialEvents)
+                    if (getOfficialEventsForDay(persianDate).size() > 0)
+                        day.setEvent(true, false);
 
                 day.setPersianDate(persianDate.clone());
 

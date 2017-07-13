@@ -7,6 +7,7 @@ public class Day {
     private int mDayOfWeek;
     private PersianDate mPersianDate;
     private boolean mEvent;
+    private boolean mLocalEvent;
 
     public boolean isEvent() {
         return mEvent;
@@ -14,6 +15,21 @@ public class Day {
 
     public void setEvent(boolean event) {
         this.mEvent = event;
+    }
+
+
+    public void setEvent(boolean event, boolean isLocal) {
+        this.mEvent = event;
+        this.mLocalEvent = isLocal;
+    }
+
+    public boolean isLocalEvent() {
+        return mLocalEvent;
+    }
+
+    public Day setLocalEvent(boolean localEvent) {
+        mLocalEvent = localEvent;
+        return this;
     }
 
     public String getNum() {
