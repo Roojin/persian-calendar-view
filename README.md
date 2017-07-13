@@ -137,6 +137,8 @@ PersianCalendarHandler setDaysFontSize(int daysFontSize)
 PersianCalendarHandler setHeadersFontSize(int headersFontSize)
 PersianCalendarHandler setTodayBackground(int todayBackground)
 PersianCalendarHandler setSelectedDayBackground(int selectedDayBackground)
+PersianCalendarHandler setHighlightOfficialEvents(boolean highlightOfficialEvents)
+PersianCalendarHandler setHighlightLocalEvents(boolean highlightLocalEvents)
 ```
 
 #### Todo
