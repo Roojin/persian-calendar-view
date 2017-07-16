@@ -27,6 +27,7 @@ import ir.mirrajabi.persiancalendar.R;
 import ir.mirrajabi.persiancalendar.core.exceptions.DayOutOfRangeException;
 import ir.mirrajabi.persiancalendar.core.interfaces.OnDayClickedListener;
 import ir.mirrajabi.persiancalendar.core.interfaces.OnDayLongClickedListener;
+import ir.mirrajabi.persiancalendar.core.interfaces.OnEventUpdateListener;
 import ir.mirrajabi.persiancalendar.core.interfaces.OnMonthChangedListener;
 import ir.mirrajabi.persiancalendar.core.models.AbstractDate;
 import ir.mirrajabi.persiancalendar.core.models.CalendarEvent;
@@ -68,6 +69,7 @@ public class PersianCalendarHandler {
     private OnDayClickedListener mOnDayClickedListener;
     private OnDayLongClickedListener mOnDayLongClickedListener;
     private OnMonthChangedListener mOnMonthChangedListener;
+    private OnEventUpdateListener mOnEventUpdateListener;
 
     private String[] mMonthNames = {
             "فروردین",
@@ -492,6 +494,15 @@ public class PersianCalendarHandler {
 
     public PersianCalendarHandler setOnMonthChangedListener(OnMonthChangedListener onMonthChangedListener) {
         mOnMonthChangedListener = onMonthChangedListener;
+        return this;
+    }
+
+    public OnEventUpdateListener getOnEventUpdateListener() {
+        return mOnEventUpdateListener;
+    }
+
+    public PersianCalendarHandler setOnEventUpdateListener(OnEventUpdateListener onEventUpdateListener) {
+        mOnEventUpdateListener = onEventUpdateListener;
         return this;
     }
 

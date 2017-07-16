@@ -19,6 +19,7 @@ import ir.mirrajabi.persiancalendar.R;
 import ir.mirrajabi.persiancalendar.core.Constants;
 import ir.mirrajabi.persiancalendar.core.PersianCalendarHandler;
 import ir.mirrajabi.persiancalendar.core.adapters.CalendarAdapter;
+import ir.mirrajabi.persiancalendar.core.interfaces.OnEventUpdateListener;
 import ir.mirrajabi.persiancalendar.core.models.CivilDate;
 import ir.mirrajabi.persiancalendar.core.models.PersianDate;
 import ir.mirrajabi.persiancalendar.helpers.DateConverter;
@@ -39,12 +40,22 @@ public class CalendarFragment extends Fragment implements ViewPager.OnPageChange
         mPersianCalendarHandler = PersianCalendarHandler.getInstance(getContext());
         mViewPagerPosition = 0;
         mMonthViewPager = (ViewPager) view.findViewById(R.id.calendar_pager);
+        mPersianCalendarHandler.setOnEventUpdateListener(new OnEventUpdateListener() {
+            @Override
+            public void update() {
+                createViewPagers();
+            }
+        });
 
+        createViewPagers();
+        return view;
+    }
+
+    private void createViewPagers() {
         mMonthViewPager.setAdapter(new CalendarAdapter(getChildFragmentManager()));
         mMonthViewPager.setCurrentItem(Constants.MONTHS_LIMIT / 2);
 
         mMonthViewPager.addOnPageChangeListener(this);
-        return view;
     }
 
     public void changeMonth(int position) {

@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         final PersianCalendarView persianCalendarView  = (PersianCalendarView)findViewById(R.id.persian_calendar);
         final PersianCalendarHandler calendar = persianCalendarView.getCalendar();
-        PersianDate today = calendar.getToday();
+        final PersianDate today = calendar.getToday();
         calendar.addLocalEvent(new CalendarEvent(
                 today, "Custom event", false
         ));
@@ -38,6 +38,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(PersianDate date) {
                 for(CalendarEvent e : calendar.getAllEventsForDay(date))
                 Toast.makeText(MainActivity.this, e.getTitle(), Toast.LENGTH_LONG).show();
+
+
+                calendar.addLocalEvent(new CalendarEvent(
+                        today.clone().rollDay(2, false), "Some event that will be added in runtime", false
+                ));
+                persianCalendarView.update();
             }
         });
 

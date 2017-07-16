@@ -112,6 +112,8 @@ public class PersianCalendarView extends FrameLayout {
     public void update(){
         this.invalidate();
         setBackgroundColor(mCalendarHandler.getColorBackground());
+        if(mCalendarHandler.getOnEventUpdateListener() != null)
+            mCalendarHandler.getOnEventUpdateListener().update();
     }
 
     public void goToDate(PersianDate date){
