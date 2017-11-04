@@ -30,7 +30,7 @@ now just simply add PersianCalendarView to your layouts
 <ir.mirrajabi.persiancalendar.PersianCalendarView
     android:id="@+id/persian_calendar"
     android:layout_width="match_parent"
-    android:layout_height="290sp"
+    android:layout_height="290dp"
     app:pcv_colorBackground="#292929"
     app:pcv_colorDayName="#bab6b6"
     app:pcv_colorHoliday="#ffd506"
