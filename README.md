@@ -140,15 +140,15 @@ PersianCalendarHandler setSelectedDayBackground(int selectedDayBackground)
 PersianCalendarHandler setHighlightOfficialEvents(boolean highlightOfficialEvents)
 PersianCalendarHandler setHighlightLocalEvents(boolean highlightLocalEvents)
 ```
-#### Notes
+### Notes
 
 If you want to use this library with Xamarin or Basic4Android you can use the following links. I didn't test any of these myself but I guess they may work fine.
 
-### using with Xamarin
+#### using with Xamarin
 
 take a look at [issue #11](https://github.com/Roojin/persian-calendar-view/issues/11#event-1378687554)
 
-### Using with B4A
+#### Using with B4A
 
 [https://b4x.com/android/forum/threads/persiancalendarview.79171/](https://b4x.com/android/forum/threads/persiancalendarview.79171/)
 
