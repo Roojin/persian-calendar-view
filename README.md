@@ -30,7 +30,7 @@ now just simply add PersianCalendarView to your layouts
 <ir.mirrajabi.persiancalendar.PersianCalendarView
     android:id="@+id/persian_calendar"
     android:layout_width="match_parent"
-    android:layout_height="290sp"
+    android:layout_height="290dp"
     app:pcv_colorBackground="#292929"
     app:pcv_colorDayName="#bab6b6"
     app:pcv_colorHoliday="#ffd506"
@@ -140,6 +140,17 @@ PersianCalendarHandler setSelectedDayBackground(int selectedDayBackground)
 PersianCalendarHandler setHighlightOfficialEvents(boolean highlightOfficialEvents)
 PersianCalendarHandler setHighlightLocalEvents(boolean highlightLocalEvents)
 ```
+### Notes
+
+If you want to use this library with Xamarin or Basic4Android you can use the following links. I didn't test any of these myself but I guess they may work fine.
+
+#### using with Xamarin
+
+take a look at [issue #11](https://github.com/Roojin/persian-calendar-view/issues/11#event-1378687554)
+
+#### Using with B4A
+
+[https://b4x.com/android/forum/threads/persiancalendarview.79171/](https://b4x.com/android/forum/threads/persiancalendarview.79171/)
 
 #### Todo
 - [ ] Make it even more flexible and customizable
