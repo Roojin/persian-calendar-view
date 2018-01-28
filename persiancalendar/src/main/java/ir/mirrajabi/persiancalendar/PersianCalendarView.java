@@ -132,7 +132,7 @@ public class PersianCalendarView extends FrameLayout {
     }
 
     public void goToMonthFromNow(int offset){
-        mCalendarFragment.changeMonth(offset);
+        mCalendarFragment.changeMonth(-offset);
     }
 
     public PersianCalendarHandler getCalendar() {
