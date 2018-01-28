@@ -22,7 +22,7 @@ allprojects {
 Then add the dependency in modules build.gradle file
 ```groovy
 dependencies {
-    compile 'com.github.roojin:persian-calendar-view:1.2.1'
+    compile 'com.github.roojin:persian-calendar-view:1.2.2'
 }
 ```
 now just simply add PersianCalendarView to your layouts
