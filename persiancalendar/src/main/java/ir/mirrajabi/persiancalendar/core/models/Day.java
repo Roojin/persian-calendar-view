@@ -8,6 +8,15 @@ public class Day {
     private PersianDate mPersianDate;
     private boolean mEvent;
     private boolean mLocalEvent;
+    private boolean mLongpress;
+
+    public boolean isLongpress() {
+        return mLongpress;
+    }
+
+    public void setLongpress(boolean mLongpress) {
+        this.mLongpress = mLongpress;
+    }
 
     public boolean isEvent() {
         return mEvent;

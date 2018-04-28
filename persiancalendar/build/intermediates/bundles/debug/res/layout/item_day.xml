@@ -38,6 +38,17 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:background="@color/selectDay"
+        android:id="@+id/longpress_day"/>
+
+    <View
+        android:layout_width="8sp"
+        android:layout_height="1sp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginBottom="8sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/selectDay"
         android:id="@+id/event"/>
 
 </RelativeLayout>

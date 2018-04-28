@@ -51,6 +51,7 @@ public class PersianCalendarHandler {
     private int mColorNormalDaySelected = Color.BLUE;
     private int mColorDayName = Color.LTGRAY;
     private int mColorEventUnderline = Color.RED;
+    private int mColorLongpressUnderline = Color.GREEN;
 
     @DrawableRes
     private int mSelectedDayBackground = R.drawable.circle_select;
@@ -433,6 +434,14 @@ public class PersianCalendarHandler {
 
     public PersianCalendarHandler setColorEventUnderline(int colorEventUnderline) {
         mColorEventUnderline = colorEventUnderline;
+        return this;
+    }
+
+    public int getColorLongpressUnderline() {
+        return mColorLongpressUnderline;
+    }
+    public PersianCalendarHandler setColorLongpressUnderline (int colorLongpressUnderline) {
+        mColorLongpressUnderline = colorLongpressUnderline;
         return this;
     }
 

@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Sat Apr 28 12:20:24 IRDT 2018
+0.baseType=DIRECTORY
+0.base=/home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/build/intermediates/assets/debug
+0.path=fonts/NotoNaskhArabic-Regular.ttf
+0.set=ASSET
+count=1

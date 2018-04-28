@@ -8,6 +8,7 @@ import android.widget.Toast;
 import ir.mirrajabi.persiancalendar.PersianCalendarView;
 import ir.mirrajabi.persiancalendar.core.PersianCalendarHandler;
 import ir.mirrajabi.persiancalendar.core.interfaces.OnDayClickedListener;
+import ir.mirrajabi.persiancalendar.core.interfaces.OnDayLongClickedListener;
 import ir.mirrajabi.persiancalendar.core.interfaces.OnMonthChangedListener;
 import ir.mirrajabi.persiancalendar.core.models.CalendarEvent;
 import ir.mirrajabi.persiancalendar.core.models.PersianDate;
@@ -43,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                 calendar.addLocalEvent(new CalendarEvent(
                         today.clone().rollDay(2, false), "Some event that will be added in runtime", false
                 ));
-                persianCalendarView.update();
+//                persianCalendarView.update();
             }
         });
 
@@ -56,7 +57,14 @@ public class MainActivity extends AppCompatActivity {
         txtDayMonth.setText(dayAndMonth);
         txtYear.setText(calendar.formatNumber(today.getYear()));
 
-        calendar.setColorBackground(getResources().getColor(android.R.color.holo_blue_dark));
+        calendar.setColorBackground(getResources().getColor(android.R.color.black));
         persianCalendarView.update();
+
+        persianCalendarView.setOnDayLongClickedListener(new OnDayLongClickedListener() {
+            @Override
+            public void onLongClick(PersianDate date) {
+//                Toast.makeText(getApplicationContext(), "toasttt", Toast.LENGTH_LONG).show();
+            }
+        });
     }
 }

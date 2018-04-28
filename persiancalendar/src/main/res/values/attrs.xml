@@ -14,5 +14,6 @@
         <attr name="pcv_selectedDayBackground" format="reference"></attr>
         <attr name="pcv_fontSize" format="dimension"></attr>
         <attr name="pcv_headersFontSize" format="dimension"></attr>
+        <attr name="pcv_longpressUnderlineColor" format="color"></attr>
     </declare-styleable>
 </resources>

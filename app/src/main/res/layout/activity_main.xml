@@ -17,6 +17,7 @@
         app:pcv_colorNormalDaySelected="#d9d9d9"
         app:pcv_colorNormalDay="#f3f4f5"
         app:pcv_eventUnderlineColor="#02f0f0"
+        app:pcv_longpressUnderlineColor="#9c27b0"
         app:pcv_fontSize="20sp"
         app:pcv_headersFontSize="14sp"/>
 
