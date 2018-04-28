@@ -28,6 +28,7 @@ public class MonthFragment extends Fragment {
     private PersianDate mPersianDate;
     private int mOffset;
     private MonthAdapter mMonthAdapter;
+    private List<Day> days;
 
     @Override
     public View onCreateView(
@@ -38,7 +39,7 @@ public class MonthFragment extends Fragment {
         mPersianCalendarHandler = PersianCalendarHandler.getInstance(getContext());
         View view = inflater.inflate(R.layout.fragment_month, container, false);
         mOffset = getArguments().getInt(Constants.OFFSET_ARGUMENT);
-        List<Day> days = mPersianCalendarHandler.getDays(mOffset);
+        /*List<Day> */days = mPersianCalendarHandler.getDays(mOffset);
 
         mPersianDate = mPersianCalendarHandler.getToday();
         int month = mPersianDate.getMonth() - mOffset;
@@ -90,6 +91,7 @@ public class MonthFragment extends Fragment {
                 int day = intent.getExtras().getInt(Constants.BROADCAST_FIELD_SELECT_DAY);
                 if (day != -1) {
                     mMonthAdapter.selectDay(day);
+                    mMonthAdapter.longpressDay(day);
                 }
             } else if (value == Constants.BROADCAST_TO_MONTH_FRAGMENT_RESET_DAY) {
                 mMonthAdapter.clearSelectedDay();

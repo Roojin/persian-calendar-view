@@ -91,6 +91,10 @@ public class PersianCalendarView extends FrameLayout {
         mCalendarHandler.setColorEventUnderline(typedArray.getColor(
                 R.styleable.PersianCalendarView_pcv_eventUnderlineColor,
                 mCalendarHandler.getColorEventUnderline()));
+
+        //add underline by longPress on a day
+        mCalendarHandler.setColorLongpressUnderline(typedArray.getColor(R.styleable.PersianCalendarView_pcv_longpressUnderlineColor, mCalendarHandler.getColorLongpressUnderline()));
+
         try {
             mCalendarFragment = CalendarFragment.class.newInstance();
         } catch (InstantiationException e) {

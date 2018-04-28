@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
+import android.view.ViewGroup;
 
 import ir.mirrajabi.persiancalendar.core.Constants;
 import ir.mirrajabi.persiancalendar.core.fragments.MonthFragment;
@@ -26,5 +27,10 @@ public class CalendarAdapter extends FragmentStatePagerAdapter {
     @Override
     public int getCount() {
         return Constants.MONTHS_LIMIT;
+    }
+
+    @Override
+    public void destroyItem(ViewGroup container, int position, Object object) {
+//        super.destroyItem(container, position, object);
     }
 }

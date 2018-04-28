@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="currentDay">#ffffff</color>
+    <color name="selectDay">#e01015</color>
+    <declare-styleable name="PersianCalendarView"><attr format="string" name="pcv_typefacePath"/><attr format="string" name="pcv_headersTypefacePath"/><attr format="color" name="pcv_colorBackground"/><attr format="color" name="pcv_colorHoliday"/><attr format="color" name="pcv_colorHolidaySelected"/><attr format="color" name="pcv_colorNormalDaySelected"/><attr format="color" name="pcv_colorNormalDay"/><attr format="color" name="pcv_colorDayName"/><attr format="color" name="pcv_eventUnderlineColor"/><attr format="reference" name="pcv_todayBackground"/><attr format="reference" name="pcv_selectedDayBackground"/><attr format="dimension" name="pcv_fontSize"/><attr format="dimension" name="pcv_headersFontSize"/><attr format="color" name="pcv_longpressUnderlineColor"/></declare-styleable>
+    <dimen name="day_item_event_size">2sp</dimen>
+    <dimen name="day_item_select_size">38sp</dimen>
+    <dimen name="day_item_size">40sp</dimen>
+    <dimen name="grid_calendar_height">290sp</dimen>
+    <dimen name="grid_calendar_padding">20sp</dimen>
+    <dimen name="grid_calendar_padding_bottom">4sp</dimen>
+    <string name="app_name">Persian Calendar</string>
+    <style name="PersianCalendarTheme" parent="Base.Theme.AppCompat.Light">
+    </style>
+</resources>

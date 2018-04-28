@@ -1,0 +1,142 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml:2:1-20:12
+INJECTED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml:2:1-20:12
+INJECTED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml:2:1-20:12
+INJECTED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml:2:1-20:12
+MERGED from [:persiancalendar] /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/persiancalendar/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-17:12
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/36ebae215f3c2f71e29baf45083f10c6/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/0c8e9acd9c8b433484e453cc7c338478/AndroidManifest.xml:17:1-26:12
+MERGED from [com.android.support:support-v4:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/4ccab107f9dbee6de4827d765a10432f/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/7e60129cca8c0c28a9c597954226e367/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/35d490f517985edf4a4e923a7e8c2e70/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-fragment:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/297f13da748bffcc9ba3ccb75d2f9523/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/f829df649e6222ec17d5725268323687/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/57133f84b840e588402f603ef3f96546/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/b8e74f83b5d7b7c855f29a2f0e951842/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/f766297e31ce7fc0e473c8d7323f984c/AndroidManifest.xml:17:1-31:12
+INJECTED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml:2:1-20:12
+INJECTED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml:2:1-20:12
+INJECTED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml:2:1-20:12
+	package
+		ADDED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml:3:11-43
+		INJECTED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml
+		INJECTED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml
+		ADDED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml:2:1-20:12
+		INJECTED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml
+		ADDED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml:2:1-20:12
+		INJECTED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml:5:5-18:19
+MERGED from [:persiancalendar] /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/persiancalendar/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-15:19
+MERGED from [:persiancalendar] /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/persiancalendar/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-15:19
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/36ebae215f3c2f71e29baf45083f10c6/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/36ebae215f3c2f71e29baf45083f10c6/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/4ccab107f9dbee6de4827d765a10432f/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/4ccab107f9dbee6de4827d765a10432f/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/7e60129cca8c0c28a9c597954226e367/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/7e60129cca8c0c28a9c597954226e367/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/35d490f517985edf4a4e923a7e8c2e70/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/35d490f517985edf4a4e923a7e8c2e70/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/297f13da748bffcc9ba3ccb75d2f9523/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/297f13da748bffcc9ba3ccb75d2f9523/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/f829df649e6222ec17d5725268323687/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/f829df649e6222ec17d5725268323687/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/57133f84b840e588402f603ef3f96546/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/57133f84b840e588402f603ef3f96546/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/b8e74f83b5d7b7c855f29a2f0e951842/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/b8e74f83b5d7b7c855f29a2f0e951842/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/f766297e31ce7fc0e473c8d7323f984c/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/f766297e31ce7fc0e473c8d7323f984c/AndroidManifest.xml:29:5-20
+	android:supportsRtl
+		ADDED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml:9:9-35
+	android:label
+		ADDED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml:8:9-41
+	android:icon
+		ADDED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml:10:9-40
+activity#ir.mirrajabi.pc.sample.MainActivity
+ADDED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml:11:9-17:20
+	android:name
+		ADDED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml:11:19-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml:12:13-16:29
+action#android.intent.action.MAIN
+ADDED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml:13:17-68
+	android:name
+		ADDED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml:13:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml:15:17-76
+	android:name
+		ADDED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml:15:27-74
+uses-sdk
+INJECTED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml
+INJECTED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml
+MERGED from [:persiancalendar] /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/persiancalendar/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:persiancalendar] /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/persiancalendar/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/36ebae215f3c2f71e29baf45083f10c6/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/36ebae215f3c2f71e29baf45083f10c6/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/0c8e9acd9c8b433484e453cc7c338478/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/0c8e9acd9c8b433484e453cc7c338478/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/4ccab107f9dbee6de4827d765a10432f/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/4ccab107f9dbee6de4827d765a10432f/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/7e60129cca8c0c28a9c597954226e367/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/7e60129cca8c0c28a9c597954226e367/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/35d490f517985edf4a4e923a7e8c2e70/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/35d490f517985edf4a4e923a7e8c2e70/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-fragment:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/297f13da748bffcc9ba3ccb75d2f9523/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/297f13da748bffcc9ba3ccb75d2f9523/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/f829df649e6222ec17d5725268323687/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/f829df649e6222ec17d5725268323687/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/57133f84b840e588402f603ef3f96546/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/57133f84b840e588402f603ef3f96546/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/b8e74f83b5d7b7c855f29a2f0e951842/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/b8e74f83b5d7b7c855f29a2f0e951842/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/f766297e31ce7fc0e473c8d7323f984c/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/f766297e31ce7fc0e473c8d7323f984c/AndroidManifest.xml:21:5-23:58
+INJECTED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml
+INJECTED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/36ebae215f3c2f71e29baf45083f10c6/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml
+		ADDED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml
+		INJECTED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml
+		ADDED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml
+		INJECTED from /home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/app/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/36ebae215f3c2f71e29baf45083f10c6/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/0c8e9acd9c8b433484e453cc7c338478/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/0c8e9acd9c8b433484e453cc7c338478/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/4ccab107f9dbee6de4827d765a10432f/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/4ccab107f9dbee6de4827d765a10432f/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/7e60129cca8c0c28a9c597954226e367/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/7e60129cca8c0c28a9c597954226e367/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/35d490f517985edf4a4e923a7e8c2e70/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/35d490f517985edf4a4e923a7e8c2e70/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-fragment:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/297f13da748bffcc9ba3ccb75d2f9523/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/297f13da748bffcc9ba3ccb75d2f9523/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/f829df649e6222ec17d5725268323687/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/f829df649e6222ec17d5725268323687/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/57133f84b840e588402f603ef3f96546/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/57133f84b840e588402f603ef3f96546/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/b8e74f83b5d7b7c855f29a2f0e951842/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/b8e74f83b5d7b7c855f29a2f0e951842/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/f766297e31ce7fc0e473c8d7323f984c/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/f766297e31ce7fc0e473c8d7323f984c/AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:appcompat-v7:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/36ebae215f3c2f71e29baf45083f10c6/AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:appcompat-v7:25.3.1] /home/devtwo/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/36ebae215f3c2f71e29baf45083f10c6/AndroidManifest.xml:26:9-47

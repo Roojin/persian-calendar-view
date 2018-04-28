@@ -24,6 +24,7 @@ public class MonthAdapter extends RecyclerView.Adapter<MonthAdapter.ViewHolder> 
     private final int TYPE_DAY = 1;
     private List<Day> mDays;
     private int mSelectedDay = -1;
+    private int mLongpressDay = -1;
     private PersianCalendarHandler mCalendarHandler;
     private final int mFirstDayOfWeek;
     private final int mTotalDays;
@@ -47,10 +48,21 @@ public class MonthAdapter extends RecyclerView.Adapter<MonthAdapter.ViewHolder> 
         notifyDataSetChanged();
     }
 
+    public void longpressDay(int dayOfMonth) {
+        mLongpressDay = dayOfMonth + 6 + mFirstDayOfWeek;
+        notifyDataSetChanged();
+    }
+
+    public void clearLongpressDay() {
+        mLongpressDay = -1;
+        notifyDataSetChanged();
+    }
+
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener {
         TextView mNum;
         View mToday;
         View mSelectDay;
+        View mLongpress;
         View mEvent;
 
         public ViewHolder(View itemView) {
@@ -59,6 +71,7 @@ public class MonthAdapter extends RecyclerView.Adapter<MonthAdapter.ViewHolder> 
             mNum = (TextView) itemView.findViewById(R.id.num);
             mToday = itemView.findViewById(R.id.today);
             mSelectDay = itemView.findViewById(R.id.select_day);
+            mLongpress = itemView.findViewById(R.id.longpress_day);
             mEvent = itemView.findViewById(R.id.event);
 
             itemView.setOnClickListener(this);
@@ -91,6 +104,17 @@ public class MonthAdapter extends RecyclerView.Adapter<MonthAdapter.ViewHolder> 
                 return false;
             }
 
+            if (position - 7 - mFirstDayOfWeek >= 0) {
+
+                mMonthFragment.onClickItem(mDays
+                        .get(position - 7 - mFirstDayOfWeek)
+                        .getPersianDate());
+
+                int c = position - 7 - mFirstDayOfWeek;
+                mDays.get(c).setLongpress(true);
+                notifyDataSetChanged();
+            }
+
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
                 try {
                     mMonthFragment.onLongClickItem(mDays
@@ -118,6 +142,7 @@ public class MonthAdapter extends RecyclerView.Adapter<MonthAdapter.ViewHolder> 
         holder.mToday.setBackgroundResource(mCalendarHandler.getTodayBackground());
         holder.mSelectDay.setBackgroundResource(mCalendarHandler.getSelectedDayBackground());
         holder.mEvent.setBackgroundColor(mCalendarHandler.getColorEventUnderline());
+        holder.mLongpress.setBackgroundColor(mCalendarHandler.getColorLongpressUnderline());
         position += 6 - (position % 7) * 2;
         if (mTotalDays < position - 6 - mFirstDayOfWeek) {
             return;
@@ -133,6 +158,10 @@ public class MonthAdapter extends RecyclerView.Adapter<MonthAdapter.ViewHolder> 
                     holder.mNum.setTextColor(mCalendarHandler.getColorHoliday());
                 } else {
                     holder.mNum.setTextColor(mCalendarHandler.getColorNormalDay());
+                }
+
+                if (mDays.get(position - 7 - mFirstDayOfWeek).isLongpress()) {
+                    holder.mLongpress.setVisibility(View.VISIBLE);
                 }
 
                 Day day = mDays.get(position - 7 - mFirstDayOfWeek);
@@ -167,6 +196,7 @@ public class MonthAdapter extends RecyclerView.Adapter<MonthAdapter.ViewHolder> 
             } else {
                 holder.mToday.setVisibility(View.GONE);
                 holder.mSelectDay.setVisibility(View.GONE);
+                holder.mLongpress.setVisibility(View.GONE);
                 holder.mNum.setVisibility(View.GONE);
                 holder.mEvent.setVisibility(View.GONE);
             }
@@ -178,6 +208,7 @@ public class MonthAdapter extends RecyclerView.Adapter<MonthAdapter.ViewHolder> 
             holder.mNum.setTypeface(mCalendarHandler.getHeadersTypeface());
             holder.mToday.setVisibility(View.GONE);
             holder.mSelectDay.setVisibility(View.GONE);
+            holder.mLongpress.setVisibility(View.GONE);
             holder.mEvent.setVisibility(View.GONE);
             holder.mNum.setVisibility(View.VISIBLE);
             mCalendarHandler.setFont(holder.mNum);

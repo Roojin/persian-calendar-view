@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ir.mirrajabi.pc.sample.test">
+
+    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="25" />
+
+    <application android:debuggable="true" >
+        <uses-library android:name="android.test.runner" />
+    </application>
+
+    <instrumentation android:name="android.support.test.runner.AndroidJUnitRunner"
+                     android:targetPackage="ir.mirrajabi.pc.sample"
+                     android:handleProfiling="false"
+                     android:functionalTest="false"
+                     android:label="Tests for ir.mirrajabi.pc.sample"/>
+</manifest>
