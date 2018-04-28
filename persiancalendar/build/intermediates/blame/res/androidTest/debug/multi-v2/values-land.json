@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/devtwo/Desktop/AndroidProjects/Fork/persian-calendar-view/persiancalendar/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-land/values-land.xml",
+            "map": [
+                {
+                    "source": "/home/devtwo/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.1.1.aar/f26326f7064d4b326d1bcb4a297f13f6/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,125,189,260",
+                        "endColumns": "69,63,70,67",
+                        "endOffsets": "120,184,255,323"
+                    }
+                }
+            ]
+        }
+    ]
+}
