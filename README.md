@@ -59,7 +59,7 @@ You can also interact with the sample app in [this Page](https://appetize.io/emb
 | pcv_todayBackground        | reference | Background resource used to highlight today        |
 | pcv_selectedDayBackground  | reference | Background resource used to highlight selected day |
 | pcv_fontSize               | dimension | Day digits font size                               |
-| pcv_HeadersFontSize        | dimension | Day name headers font size                         |
+| pcv_headersFontSize        | dimension | Day name headers font size                         |
 
 ## Functions
 Most of the functionalities are inside the handler class. you can get it like this
