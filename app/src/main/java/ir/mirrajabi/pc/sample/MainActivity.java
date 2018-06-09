@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        final PersianCalendarView persianCalendarView  = (PersianCalendarView)findViewById(R.id.persian_calendar);
+        final PersianCalendarView persianCalendarView  = findViewById(R.id.persian_calendar);
         final PersianCalendarHandler calendar = persianCalendarView.getCalendar();
         final PersianDate today = calendar.getToday();
         calendar.addLocalEvent(new CalendarEvent(
@@ -38,18 +38,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(PersianDate date) {
                 for(CalendarEvent e : calendar.getAllEventsForDay(date))
                 Toast.makeText(MainActivity.this, e.getTitle(), Toast.LENGTH_LONG).show();
-
-
-                calendar.addLocalEvent(new CalendarEvent(
-                        today.clone().rollDay(2, false), "Some event that will be added in runtime", false
-                ));
-                persianCalendarView.update();
             }
         });
 
         calendar.setHighlightOfficialEvents(false);
-        TextView txtDayMonth = (TextView) findViewById(R.id.txt_day_month);
-        TextView txtYear = (TextView) findViewById(R.id.txt_year);
+        TextView txtDayMonth = findViewById(R.id.txt_day_month);
+        TextView txtYear = findViewById(R.id.txt_year);
 
         String dayAndMonth = calendar.getWeekDayName(today) + calendar.formatNumber(today.getDayOfMonth())
                 + calendar.getMonthName(today);

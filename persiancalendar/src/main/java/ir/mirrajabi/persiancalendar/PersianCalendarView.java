@@ -18,7 +18,7 @@ import ir.mirrajabi.persiancalendar.core.interfaces.OnMonthChangedListener;
 import ir.mirrajabi.persiancalendar.core.models.PersianDate;
 
 /**
- * Created by MADNESS on 3/23/2017.
+ * Created by Mohammad Mirrajabi on 3/23/2017.
  */
 
 public class PersianCalendarView extends FrameLayout {
