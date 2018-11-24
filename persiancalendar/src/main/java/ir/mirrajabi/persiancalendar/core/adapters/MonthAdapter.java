@@ -172,7 +172,7 @@ public class MonthAdapter extends RecyclerView.Adapter<MonthAdapter.ViewHolder> 
             }
             mCalendarHandler.setFontAndShape(holder.mNum);
         } else {
-            holder.mNum.setText(Constants.FIRST_CHAR_OF_DAYS_OF_WEEK_NAME[position]);
+            holder.mNum.setText(mContext.getResources().getStringArray(R.array.first_char_of_days_of_week_name)[position]);
             holder.mNum.setTextColor(mCalendarHandler.getColorDayName());
             holder.mNum.setTextSize(TypedValue.COMPLEX_UNIT_PX, mCalendarHandler.getHeadersFontSize());
             holder.mNum.setTypeface(mCalendarHandler.getHeadersTypeface());

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Persian Calendar</string>
+    <string name="shanbe">ش</string>
+    <string name="yekshanbe">ی</string>
+    <string name="doshanbe">د</string>
+    <string name="seshanbe">س</string>
+    <string name="chaharshanbe">چ</string>
+    <string name="panjshanbe">پ</string>
+    <string name="jome">ج</string>
+    <string name="pcv_one">۱</string>
+    <string name="pcv_two">۲</string>
+    <string name="pcv_three">۳</string>
+    <string name="pcv_four">۴</string>
+    <string name="pcv_five">۵</string>
+    <string name="pcv_six">۶</string>
+    <string name="pcv_seven">۷</string>
+    <string name="pcv_eight">۸</string>
+    <string name="pcv_nine">۹</string>
+</resources>

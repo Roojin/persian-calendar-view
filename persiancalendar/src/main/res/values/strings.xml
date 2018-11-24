@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Persian Calendar</string>
+    <string name="shanbe">Sat</string>
+    <string name="yekshanbe">Sun</string>
+    <string name="doshanbe">Mon</string>
+    <string name="seshanbe">Tue</string>
+    <string name="chaharshanbe">Wed</string>
+    <string name="panjshanbe">Thu</string>
+    <string name="jome">Fri</string>
+    <string name="pcv_one">1</string>
+    <string name="pcv_two">2</string>
+    <string name="pcv_three">3</string>
+    <string name="pcv_four">4</string>
+    <string name="pcv_five">5</string>
+    <string name="pcv_six">6</string>
+    <string name="pcv_seven">7</string>
+    <string name="pcv_eight">8</string>
+    <string name="pcv_nine">9</string>
+
 </resources>

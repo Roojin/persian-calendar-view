@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="first_char_of_days_of_week_name">
+        <item>@string/shanbe</item>
+        <item>@string/yekshanbe</item>
+        <item>@string/doshanbe</item>
+        <item>@string/seshanbe</item>
+        <item>@string/chaharshanbe</item>
+        <item>@string/panjshanbe</item>
+        <item>@string/jome</item>
+    </string-array>
+
+    <string-array name="PERSIAN_DIGITS">
+        <item>@string/pcv_one</item>
+        <item>@string/pcv_two</item>
+        <item>@string/pcv_three</item>
+        <item>@string/pcv_four</item>
+        <item>@string/pcv_five</item>
+        <item>@string/pcv_six</item>
+        <item>@string/pcv_seven</item>
+        <item>@string/pcv_eight</item>
+        <item>@string/pcv_nine</item>
+    </string-array>
+</resources>

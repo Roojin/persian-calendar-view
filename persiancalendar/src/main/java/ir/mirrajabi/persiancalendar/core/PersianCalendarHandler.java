@@ -142,7 +142,7 @@ public class PersianCalendarHandler {
         textView.setText(shape(textView.getText().toString()));
     }
 
-    private char[] mPreferredDigits = Constants.PERSIAN_DIGITS;
+    private char[] mPreferredDigits = mContext.getResources().getStringArray(R.array.PERSIAN_DIGITS).toString().toCharArray();
     private boolean mIranTime;
 
     public PersianDate getToday() {
