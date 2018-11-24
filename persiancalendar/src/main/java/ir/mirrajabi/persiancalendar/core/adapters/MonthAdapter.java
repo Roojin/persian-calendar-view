@@ -12,7 +12,6 @@ import android.widget.TextView;
 import java.util.List;
 
 import ir.mirrajabi.persiancalendar.R;
-import ir.mirrajabi.persiancalendar.core.Constants;
 import ir.mirrajabi.persiancalendar.core.PersianCalendarHandler;
 import ir.mirrajabi.persiancalendar.core.fragments.MonthFragment;
 import ir.mirrajabi.persiancalendar.core.models.Day;
@@ -172,7 +171,7 @@ public class MonthAdapter extends RecyclerView.Adapter<MonthAdapter.ViewHolder> 
             }
             mCalendarHandler.setFontAndShape(holder.mNum);
         } else {
-            holder.mNum.setText(mContext.getResources().getStringArray(R.array.first_char_of_days_of_week_name)[position]);
+            holder.mNum.setText(mContext.getResources().getStringArray(R.array.pcv_first_char_of_days_of_week_name)[position]);
             holder.mNum.setTextColor(mCalendarHandler.getColorDayName());
             holder.mNum.setTextSize(TypedValue.COMPLEX_UNIT_PX, mCalendarHandler.getHeadersFontSize());
             holder.mNum.setTypeface(mCalendarHandler.getHeadersTypeface());

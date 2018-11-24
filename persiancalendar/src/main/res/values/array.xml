@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="first_char_of_days_of_week_name">
-        <item>@string/shanbe</item>
-        <item>@string/yekshanbe</item>
-        <item>@string/doshanbe</item>
-        <item>@string/seshanbe</item>
-        <item>@string/chaharshanbe</item>
-        <item>@string/panjshanbe</item>
-        <item>@string/jome</item>
+    <string-array name="pcv_first_char_of_days_of_week_name">
+        <item>@string/pcv_shanbe</item>
+        <item>@string/pcv_yekshanbe</item>
+        <item>@string/pcv_doshanbe</item>
+        <item>@string/pcv_seshanbe</item>
+        <item>@string/pcv_chaharshanbe</item>
+        <item>@string/pcv_panjshanbe</item>
+        <item>@string/pcv_jome</item>
     </string-array>
 
-    <string-array name="PERSIAN_DIGITS">
+    <string-array name="pcv_persian_digits">
         <item>@string/pcv_one</item>
         <item>@string/pcv_two</item>
         <item>@string/pcv_three</item>
@@ -20,5 +20,30 @@
         <item>@string/pcv_seven</item>
         <item>@string/pcv_eight</item>
         <item>@string/pcv_nine</item>
+    </string-array>
+
+    <string-array name="pcv_months">
+        <item>@string/pcv_farvardin</item>
+        <item>@string/pcv_ordibehesht</item>
+        <item>@string/pcv_khordad</item>
+        <item>@string/pcv_tir</item>
+        <item>@string/pcv_mordad</item>
+        <item>@string/pcv_shahrivar</item>
+        <item>@string/pcv_mehr</item>
+        <item>@string/pcv_aban</item>
+        <item>@string/pcv_azar</item>
+        <item>@string/pcv_dey</item>
+        <item>@string/pcv_bahman</item>
+        <item>@string/pcv_esfand</item>
+    </string-array>
+
+    <string-array name="pcv_days_of_week">
+        <item>@string/pcv_saturday</item>
+        <item>@string/pcv_sunday</item>
+        <item>@string/pcv_monday</item>
+        <item>@string/pcv_tuesday</item>
+        <item>@string/pcv_wednesday</item>
+        <item>@string/pcv_thursday</item>
+        <item>@string/pcv_friday</item>
     </string-array>
 </resources>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Persian Calendar</string>
-    <string name="shanbe">Sat</string>
-    <string name="yekshanbe">Sun</string>
-    <string name="doshanbe">Mon</string>
-    <string name="seshanbe">Tue</string>
-    <string name="chaharshanbe">Wed</string>
-    <string name="panjshanbe">Thu</string>
-    <string name="jome">Fri</string>
+    <string name="pcv_shanbe">Sat</string>
+    <string name="pcv_yekshanbe">Sun</string>
+    <string name="pcv_doshanbe">Mon</string>
+    <string name="pcv_seshanbe">Tue</string>
+    <string name="pcv_chaharshanbe">Wed</string>
+    <string name="pcv_panjshanbe">Thu</string>
+    <string name="pcv_jome">Fri</string>
     <string name="pcv_one">1</string>
     <string name="pcv_two">2</string>
     <string name="pcv_three">3</string>
@@ -17,5 +17,24 @@
     <string name="pcv_seven">7</string>
     <string name="pcv_eight">8</string>
     <string name="pcv_nine">9</string>
+    <string name="pcv_farvardin">Farvardin</string>
+    <string name="pcv_ordibehesht">Ordibehesht</string>
+    <string name="pcv_khordad">Khordad</string>
+    <string name="pcv_tir">Tir</string>
+    <string name="pcv_mordad">Mordad</string>
+    <string name="pcv_shahrivar">Shahriver</string>
+    <string name="pcv_mehr">Mehr</string>
+    <string name="pcv_aban">Aban</string>
+    <string name="pcv_azar">Azar</string>
+    <string name="pcv_dey">Dey</string>
+    <string name="pcv_bahman">Bahman</string>
+    <string name="pcv_esfand">Esfand</string>
+    <string name="pcv_saturday">Saturday</string>
+    <string name="pcv_sunday">Sunday</string>
+    <string name="pcv_monday">Monday</string>
+    <string name="pcv_tuesday">Tuesday</string>
+    <string name="pcv_wednesday">Wednesday</string>
+    <string name="pcv_thursday">Thursday</string>
+    <string name="pcv_friday">Friday</string>
 
 </resources>

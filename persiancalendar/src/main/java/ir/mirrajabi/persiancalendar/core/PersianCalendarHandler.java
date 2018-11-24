@@ -71,33 +71,14 @@ public class PersianCalendarHandler {
     private OnMonthChangedListener mOnMonthChangedListener;
     private OnEventUpdateListener mOnEventUpdateListener;
 
-    private String[] mMonthNames = {
-            "فروردین",
-            "اردیبهشت",
-            "خرداد",
-            "تیر",
-            "مرداد",
-            "شهریور",
-            "مهر",
-            "آبان",
-            "آذر",
-            "دی",
-            "بهمن",
-            "اسفند"
-    };
-    private String[] mWeekDaysNames = {
-            "شنبه",
-            "یک‌شنبه",
-            "دوشنبه",
-            "سه‌شنبه",
-            "چهارشنبه",
-            "پنج‌شنبه",
-            "جمعه"
-    };
+    private String[] mMonthNames;
+    private String[] mWeekDaysNames;
 
     private PersianCalendarHandler(Context context) {
         this.mContext = context;
         mLocalEvents = new ArrayList<>();
+        mMonthNames = mContext.getResources().getStringArray(R.array.pcv_months);
+        mWeekDaysNames = mContext.getResources().getStringArray(R.array.pcv_days_of_week);
     }
 
     private static WeakReference<PersianCalendarHandler> myWeakInstance;
@@ -142,7 +123,7 @@ public class PersianCalendarHandler {
         textView.setText(shape(textView.getText().toString()));
     }
 
-    private char[] mPreferredDigits = mContext.getResources().getStringArray(R.array.PERSIAN_DIGITS).toString().toCharArray();
+    private char[] mPreferredDigits = mContext.getResources().getStringArray(R.array.pcv_persian_digits).toString().toCharArray();
     private boolean mIranTime;
 
     public PersianDate getToday() {
