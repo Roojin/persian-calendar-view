@@ -79,6 +79,9 @@ public class PersianCalendarHandler {
         mLocalEvents = new ArrayList<>();
         mMonthNames = mContext.getResources().getStringArray(R.array.pcv_months);
         mWeekDaysNames = mContext.getResources().getStringArray(R.array.pcv_days_of_week);
+        if (context.getResources().getConfiguration().locale.getLanguage().equals("en") ){
+            mPreferredDigits = Constants.ARABIC_DIGITS;
+        }
     }
 
     private static WeakReference<PersianCalendarHandler> myWeakInstance;
@@ -123,7 +126,7 @@ public class PersianCalendarHandler {
         textView.setText(shape(textView.getText().toString()));
     }
 
-    private char[] mPreferredDigits = mContext.getResources().getStringArray(R.array.pcv_persian_digits).toString().toCharArray();
+    private char[] mPreferredDigits = Constants.PERSIAN_DIGITS;
     private boolean mIranTime;
 
     public PersianDate getToday() {

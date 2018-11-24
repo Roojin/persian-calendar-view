@@ -11,15 +11,15 @@
     </string-array>
 
     <string-array name="pcv_persian_digits">
-        <item>@string/pcv_one</item>
-        <item>@string/pcv_two</item>
-        <item>@string/pcv_three</item>
-        <item>@string/pcv_four</item>
-        <item>@string/pcv_five</item>
-        <item>@string/pcv_six</item>
-        <item>@string/pcv_seven</item>
-        <item>@string/pcv_eight</item>
-        <item>@string/pcv_nine</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
     </string-array>
 
     <string-array name="pcv_months">
