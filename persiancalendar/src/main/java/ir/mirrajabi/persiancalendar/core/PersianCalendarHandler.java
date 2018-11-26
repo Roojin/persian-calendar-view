@@ -20,6 +20,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 import java.util.Scanner;
 import java.util.TimeZone;
 
@@ -79,8 +80,10 @@ public class PersianCalendarHandler {
         mLocalEvents = new ArrayList<>();
         mMonthNames = mContext.getResources().getStringArray(R.array.pcv_months);
         mWeekDaysNames = mContext.getResources().getStringArray(R.array.pcv_days_of_week);
-        if (context.getResources().getConfiguration().locale.getLanguage().equals("en") ){
+        if (Locale.getDefault().getLanguage().equals("en")){
             mPreferredDigits = Constants.ARABIC_DIGITS;
+        }else{
+            mPreferredDigits = Constants.PERSIAN_DIGITS;
         }
     }
 
@@ -126,7 +129,7 @@ public class PersianCalendarHandler {
         textView.setText(shape(textView.getText().toString()));
     }
 
-    private char[] mPreferredDigits = Constants.PERSIAN_DIGITS;
+    private char[] mPreferredDigits;
     private boolean mIranTime;
 
     public PersianDate getToday() {

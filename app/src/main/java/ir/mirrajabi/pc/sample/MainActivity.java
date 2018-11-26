@@ -1,9 +1,14 @@
 package ir.mirrajabi.pc.sample;
 
+import android.app.Fragment;
+import android.content.res.Configuration;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.Locale;
 
 import ir.mirrajabi.persiancalendar.PersianCalendarView;
 import ir.mirrajabi.persiancalendar.core.PersianCalendarHandler;
@@ -58,5 +63,23 @@ public class MainActivity extends AppCompatActivity {
 
         calendar.setColorBackground(getResources().getColor(android.R.color.holo_blue_dark));
         persianCalendarView.update();
+    }
+
+    @Override
+    public void onAttachFragment(Fragment fragment) {
+        super.onAttachFragment(fragment);
+        setFarsiLang();
+    }
+
+    private void setFarsiLang(){
+        Locale locale = new Locale("FA");
+        Locale.setDefault(locale);
+        Configuration configuration = getBaseContext().getResources().getConfiguration();
+        configuration.locale = locale;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
+            configuration.setLayoutDirection(locale);
+        }
+        getBaseContext().getResources().updateConfiguration(configuration, getBaseContext().getResources().getDisplayMetrics());
+        recreate();
     }
 }
