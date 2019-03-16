@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 import ir.mirrajabi.persiancalendar.PersianCalendarView;
 import ir.mirrajabi.persiancalendar.core.PersianCalendarHandler;
 import ir.mirrajabi.persiancalendar.core.interfaces.OnDayClickedListener;
@@ -21,18 +22,18 @@ public class MainActivity extends AppCompatActivity {
         final PersianCalendarView persianCalendarView  = (PersianCalendarView)findViewById(R.id.persian_calendar);
         final PersianCalendarHandler calendar = persianCalendarView.getCalendar();
         final PersianDate today = calendar.getToday();
-        calendar.addLocalEvent(new CalendarEvent(
-                today, "Custom event", false
-        ));
-        calendar.addLocalEvent(new CalendarEvent(
-                today.clone().rollDay(2,true), "Custom event 2", true
-        ));
-        calendar.setOnMonthChangedListener(new OnMonthChangedListener() {
-            @Override
-            public void onChanged(PersianDate date) {
-                Toast.makeText(MainActivity.this, calendar.getMonthName(date),Toast.LENGTH_SHORT).show();
-            }
-        });
+//        calendar.addLocalEvent(new CalendarEvent(
+//                today, "Custom event", false
+//        ));
+//        calendar.addLocalEvent(new CalendarEvent(
+//                today.clone().rollDay(2,true), "Custom event 2", true
+//        ));
+//        calendar.setOnMonthChangedListener(new OnMonthChangedListener() {
+//            @Override
+//            public void onChanged(PersianDate date) {
+//                Toast.makeText(MainActivity.this, calendar.getMonthName(date),Toast.LENGTH_SHORT).show();
+//            }
+//        });
         persianCalendarView.setOnDayClickedListener(new OnDayClickedListener() {
             @Override
             public void onClick(PersianDate date) {

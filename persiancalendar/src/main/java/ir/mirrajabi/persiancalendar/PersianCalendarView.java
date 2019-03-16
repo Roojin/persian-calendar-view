@@ -10,11 +10,22 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.FrameLayout;
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
+import java.util.List;
+
 import ir.mirrajabi.persiancalendar.core.PersianCalendarHandler;
 import ir.mirrajabi.persiancalendar.core.fragments.CalendarFragment;
 import ir.mirrajabi.persiancalendar.core.interfaces.OnDayClickedListener;
 import ir.mirrajabi.persiancalendar.core.interfaces.OnDayLongClickedListener;
 import ir.mirrajabi.persiancalendar.core.interfaces.OnMonthChangedListener;
+import ir.mirrajabi.persiancalendar.core.models.CalendarEvent;
 import ir.mirrajabi.persiancalendar.core.models.PersianDate;
 
 /**
@@ -24,6 +35,8 @@ import ir.mirrajabi.persiancalendar.core.models.PersianDate;
 public class PersianCalendarView extends FrameLayout {
     private PersianCalendarHandler mCalendarHandler;
     CalendarFragment mCalendarFragment = null;
+    private String calenderevents;
+
 
     public PersianCalendarView(Context context) {
         super(context);
@@ -45,6 +58,20 @@ public class PersianCalendarView extends FrameLayout {
         View view = LayoutInflater.from(context).inflate(R.layout.view_calendar, this, true);
         TypedArray typedArray = context.obtainStyledAttributes(attrs,
                 R.styleable.PersianCalendarView, 0, 0);
+        //----------------------------------------------------------------------
+        Gson gson = new Gson();
+        calenderevents = String.valueOf(getContext().getExternalFilesDir("db")) + "/calenderevents";
+
+        try {
+            List<CalendarEvent> tmpEvent = gson.fromJson(new FileReader(calenderevents), new TypeToken<List<CalendarEvent>>() {
+            }.getType());
+            if (tmpEvent != null) {
+                mCalendarHandler.setLocalEvents(tmpEvent);
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        //-----------------------------------------------------------------------
 
         if(typedArray.hasValue(R.styleable.PersianCalendarView_pcv_typefacePath)) {
             Typeface typeface = Typeface.createFromAsset(context.getAssets(),
@@ -114,6 +141,26 @@ public class PersianCalendarView extends FrameLayout {
         setBackgroundColor(mCalendarHandler.getColorBackground());
         if(mCalendarHandler.getOnEventUpdateListener() != null)
             mCalendarHandler.getOnEventUpdateListener().update();
+        this.WriteCustomEvents();
+    }
+
+    private void WriteCustomEvents()
+    {
+        mCalendarHandler = PersianCalendarHandler.getInstance(getContext());
+        List<CalendarEvent> Eventlist = mCalendarHandler.getLocalEvents();
+        Gson gson = new Gson();
+        calenderevents = String.valueOf(getContext().getExternalFilesDir("db")) + "/calenderevents";
+        String jsonInString = gson.toJson(Eventlist);
+        try {
+            PrintWriter writer = new PrintWriter(calenderevents, "UTF-8");
+            writer.print(jsonInString);
+            writer.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
     }
 
     public void goToDate(PersianDate date){

@@ -458,6 +458,10 @@ public class PersianCalendarHandler {
         return mLocalEvents;
     }
 
+    public void setLocalEvents(List<CalendarEvent> mLocalEvents) {
+        this.mLocalEvents = mLocalEvents;
+    }
+
     public List<CalendarEvent> getLocalEventsForDay(PersianDate day){
         return getEventsForDay(day,mLocalEvents);
     }
